@@ -1,0 +1,9 @@
+Road map for Mushroom Board computer:
+
+- Design A20 board
+- Add ethernet,power,uart,bluetooth,wifi ics
+
+
+
+- Design connectors module
+- Add ethernet,hdmi,sata,
