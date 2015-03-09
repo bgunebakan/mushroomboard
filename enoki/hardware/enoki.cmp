@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Pzt 09 Mar 2015 12:07:01 EET
+
+BeginCmp
+TimeStamp = /54FD6A8D;
+Reference = U1;
+ValeurCmp = ALLWINNERA10/TFBGA441;
+IdModule  = TFBGA441;
+EndCmp
+
+EndListe

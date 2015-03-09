@@ -1,0 +1,207 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:allwinner
+EELAYER 27 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "9 mar 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ALLWINNERA10/TFBGA441 U?
+U 1 1 54FD70E1
+P 5500 4000
+F 0 "U?" H 5500 4000 60  0000 C CNN
+F 1 "ALLWINNERA10/TFBGA441" H 5500 3850 60  0000 C CNN
+F 2 "" H 5500 4000 60  0000 C CNN
+F 3 "" H 5500 4000 60  0000 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 54FD7246
+P 2250 2050
+F 0 "#PWR?" H 2250 2010 30  0001 C CNN
+F 1 "+3.3V" H 2250 2160 30  0000 C CNN
+F 2 "" H 2250 2050 60  0000 C CNN
+F 3 "" H 2250 2050 60  0000 C CNN
+	1    2250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2250 2250 2250
+Wire Wire Line
+	2250 2050 2250 2450
+$Comp
+L C C?
+U 1 1 54FD7256
+P 1600 2350
+F 0 "C?" H 1600 2450 40  0000 L CNN
+F 1 "22uF/6.3V" H 1606 2265 40  0000 L CNN
+F 2 "~" H 1638 2200 30  0000 C CNN
+F 3 "~" H 1600 2350 60  0000 C CNN
+	1    1600 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 54FD7265
+P 1600 2550
+F 0 "C?" H 1600 2650 40  0000 L CNN
+F 1 "220nF" H 1606 2465 40  0000 L CNN
+F 2 "~" H 1638 2400 30  0000 C CNN
+F 3 "~" H 1600 2550 60  0000 C CNN
+	1    1600 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 2350 1300 2350
+Wire Wire Line
+	1300 2350 1300 3150
+Wire Wire Line
+	1300 2550 1400 2550
+Wire Wire Line
+	2250 2350 1800 2350
+Connection ~ 2250 2250
+Wire Wire Line
+	1800 2550 1900 2550
+Wire Wire Line
+	1900 2550 1900 2350
+Connection ~ 1900 2350
+$Comp
+L C C?
+U 1 1 54FD728A
+P 1600 2350
+F 0 "C?" H 1600 2450 40  0000 L CNN
+F 1 "C" H 1606 2265 40  0000 L CNN
+F 2 "~" H 1638 2200 30  0000 C CNN
+F 3 "~" H 1600 2350 60  0000 C CNN
+	1    1600 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2450 3200 2450
+Connection ~ 2250 2350
+Wire Wire Line
+	3100 2750 3200 2750
+Wire Wire Line
+	3100 2350 3100 2850
+Wire Wire Line
+	3100 2550 3200 2550
+Wire Wire Line
+	3200 2350 3100 2350
+Connection ~ 3100 2550
+$Comp
+L GND #PWR?
+U 1 1 54FD72D2
+P 3100 2850
+F 0 "#PWR?" H 3100 2850 30  0001 C CNN
+F 1 "GND" H 3100 2780 30  0001 C CNN
+F 2 "" H 3100 2850 60  0000 C CNN
+F 3 "" H 3100 2850 60  0000 C CNN
+	1    3100 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 2750
+$Comp
+L +1.2V #PWR?
+U 1 1 54FD72F3
+P 2150 2500
+F 0 "#PWR?" H 2150 2640 20  0001 C CNN
+F 1 "+1.2V" H 2150 2610 30  0000 C CNN
+F 2 "" H 2150 2500 60  0000 C CNN
+F 3 "" H 2150 2500 60  0000 C CNN
+	1    2150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2650 3200 2650
+Wire Wire Line
+	2150 2650 2150 2500
+$Comp
+L C C?
+U 1 1 54FD733E
+P 1600 3000
+F 0 "C?" H 1600 3100 40  0000 L CNN
+F 1 "220nF" H 1606 2915 40  0000 L CNN
+F 2 "~" H 1638 2850 30  0000 C CNN
+F 3 "~" H 1600 3000 60  0000 C CNN
+	1    1600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 54FD7344
+P 1600 2800
+F 0 "C?" H 1600 2900 40  0000 L CNN
+F 1 "22uF/6.3V" H 1606 2715 40  0000 L CNN
+F 2 "~" H 1638 2650 30  0000 C CNN
+F 3 "~" H 1600 2800 60  0000 C CNN
+	1    1600 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2800 1400 2800
+Wire Wire Line
+	1300 3000 1400 3000
+Wire Wire Line
+	1800 2800 1900 2800
+Wire Wire Line
+	1900 2650 1900 3000
+Wire Wire Line
+	1900 3000 1800 3000
+Connection ~ 2150 2650
+Connection ~ 1900 2800
+Connection ~ 1300 2800
+Connection ~ 1300 2550
+$Comp
+L GND #PWR?
+U 1 1 54FD73B4
+P 1300 3150
+F 0 "#PWR?" H 1300 3150 30  0001 C CNN
+F 1 "GND" H 1300 3080 30  0001 C CNN
+F 2 "" H 1300 3150 60  0000 C CNN
+F 3 "" H 1300 3150 60  0000 C CNN
+	1    1300 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 3000
+$EndSCHEMATC

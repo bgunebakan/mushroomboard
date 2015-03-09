@@ -1,0 +1,163 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rtl8305sc
+LIBS:eoma68
+LIBS:cy7c65631
+LIBS:tps2044bd
+LIBS:osc
+LIBS:ldo1117
+LIBS:stewart_7pin_magjack
+LIBS:2sb1188
+LIBS:sy8008b
+LIBS:router-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RTL8305SC U201
+U 3 1 5238DD6F
+P 2100 4200
+F 0 "U201" H 2100 1750 60  0000 C CNN
+F 1 "RTL8305SC" H 2100 6650 60  0000 C CNN
+F 2 "" H 2650 3950 60  0000 C CNN
+F 3 "" H 2650 3950 60  0000 C CNN
+	3    2100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R501
+U 1 1 5238DE8D
+P 3450 2700
+F 0 "R501" V 3530 2700 50  0000 C CNN
+F 1 "1.96K/1%" V 3450 2700 39  0000 C CNN
+F 2 "" H 3450 2700 60  0000 C CNN
+F 3 "" H 3450 2700 60  0000 C CNN
+	1    3450 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 2700 3200 2700
+Wire Wire Line
+	3700 2700 3900 2700
+Wire Wire Line
+	3000 3000 3900 3000
+Wire Wire Line
+	3000 3100 3900 3100
+Text GLabel 3900 3000 2    39   Input ~ 0
+MDIO
+Text GLabel 3900 3100 2    39   Input ~ 0
+MDC
+$Comp
+L CRYSTAL X501
+U 1 1 5238DDDB
+P 3900 4200
+F 0 "X501" H 3900 4350 60  0000 C CNN
+F 1 "CRYSTAL" H 3900 4050 60  0000 C CNN
+F 2 "" H 3900 4200 60  0000 C CNN
+F 3 "" H 3900 4200 60  0000 C CNN
+	1    3900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RTL8305SC U201
+U 4 1 523B57C4
+P 7200 3600
+F 0 "U201" H 7200 1150 60  0000 C CNN
+F 1 "RTL8305SC" H 7200 6050 60  0000 C CNN
+F 2 "" H 7750 3350 60  0000 C CNN
+F 3 "" H 7750 3350 60  0000 C CNN
+	4    7200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R504
+U 1 1 523B5A04
+P 10650 6100
+F 0 "R504" V 10700 5800 50  0000 C CNN
+F 1 "10K" V 10650 6100 39  0000 C CNN
+F 2 "" H 10650 6100 60  0000 C CNN
+F 3 "" H 10650 6100 60  0000 C CNN
+	1    10650 6100
+	0    -1   -1   0   
+$EndComp
+Text Notes 9450 5600 0    60   ~ 0
+P4MODE[1:0]=11 UTP/MAC mode MII
+$Comp
+L R R503
+U 1 1 523B5A3C
+P 8550 2000
+F 0 "R503" V 8600 1700 50  0000 C CNN
+F 1 "10K" V 8550 2000 39  0000 C CNN
+F 2 "" H 8550 2000 60  0000 C CNN
+F 3 "" H 8550 2000 60  0000 C CNN
+	1    8550 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 2000 9000 2000
+$Comp
+L GND #PWR501
+U 1 1 523B5A6C
+P 9000 2000
+F 0 "#PWR501" H 9000 2000 30  0001 C CNN
+F 1 "GND" H 9000 1930 30  0001 C CNN
+F 2 "" H 9000 2000 60  0000 C CNN
+F 3 "" H 9000 2000 60  0000 C CNN
+	1    9000 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 2000 8300 2000
+Wire Wire Line
+	3000 4200 3600 4200
+Wire Wire Line
+	3000 4300 4500 4300
+Wire Wire Line
+	4500 4300 4500 4200
+Wire Wire Line
+	4500 4200 4200 4200
+Wire Wire Line
+	3000 2500 3600 2500
+Text GLabel 3600 2500 2    60   Input ~ 0
+RESET#
+$EndSCHEMATC

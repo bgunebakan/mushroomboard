@@ -1,0 +1,267 @@
+EESchema Schematic File Version 2  date Sat 23 Jun 2012 23:59:04 BST
+LIBS:rtl8201cp
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:allwinner
+LIBS:axp209
+LIBS:hynix
+LIBS:eoma
+LIBS:yutai
+LIBS:pinhead
+LIBS:usb_a_plug
+LIBS:mini_usb_b
+LIBS:8_10-card
+LIBS:kb3436
+LIBS:usb_micro_ab
+LIBS:usb_minib
+LIBS:tm2301n
+LIBS:inductor
+LIBS:inductorp
+LIBS:usbdf
+LIBS:sdcw2012
+LIBS:ms_1d77
+LIBS:varistor
+LIBS:r_us
+LIBS:gta02_power
+LIBS:exc24cb102u
+LIBS:jack_4p
+LIBS:hy27ug088g5m
+LIBS:hdmi
+LIBS:tas4025a
+LIBS:ap1231
+LIBS:td6821
+LIBS:sy8008b
+LIBS:1n4148
+LIBS:rt8266pe
+LIBS:rclamp0524p
+LIBS:cpu_card-cache
+EELAYER 25  0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 13 24
+Title ""
+Date "23 jun 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2500 1200 3100 1200
+Wire Wire Line
+	3450 2850 3800 2850
+Wire Wire Line
+	2600 2850 1850 2850
+Wire Wire Line
+	2600 2550 1850 2550
+Wire Wire Line
+	3750 1800 3750 2550
+Connection ~ 4900 2100
+Wire Wire Line
+	4800 2100 4950 2100
+Wire Wire Line
+	4950 2100 4950 2050
+Wire Wire Line
+	4550 1850 3800 1850
+Connection ~ 2950 1200
+Wire Wire Line
+	3250 1500 3100 1500
+Wire Wire Line
+	2950 1900 2950 1800
+Connection ~ 3300 1900
+Wire Wire Line
+	4100 1500 4200 1500
+Wire Wire Line
+	4200 1500 4200 1750
+Wire Wire Line
+	4200 1750 4550 1750
+Wire Wire Line
+	4150 2050 4150 1950
+Wire Wire Line
+	4150 1950 4550 1950
+Wire Wire Line
+	4500 2750 4500 2800
+Wire Wire Line
+	4800 2300 4800 2050
+Wire Wire Line
+	4850 2100 4850 2050
+Connection ~ 4800 2100
+Wire Wire Line
+	4800 2700 4800 2800
+Wire Wire Line
+	4500 2250 4500 2200
+Wire Wire Line
+	4500 2200 4800 2200
+Connection ~ 4800 2200
+Wire Wire Line
+	4150 2650 4150 2800
+Wire Wire Line
+	3700 1500 3600 1500
+Wire Wire Line
+	3300 1750 3300 1900
+Wire Wire Line
+	2950 1200 2950 1300
+Wire Wire Line
+	3100 1500 3100 1200
+Wire Wire Line
+	3750 1800 4550 1800
+Wire Wire Line
+	4550 1900 2550 1900
+Connection ~ 2950 1900
+Wire Wire Line
+	4900 2100 4900 2050
+Connection ~ 4850 2100
+Wire Wire Line
+	3800 1850 3800 2850
+Wire Wire Line
+	2600 2700 2300 2700
+Wire Wire Line
+	3750 2550 3450 2550
+Text GLabel 2500 1200 0    60   Input ~ 0
+VCC_USBOTG
+Text GLabel 1850 2550 0    60   Input ~ 0
+USBOTG-
+Text GLabel 1850 2850 0    60   Input ~ 0
+USBOTG+
+$Comp
+L GND #PWR0158
+U 1 1 4ACE4888
+P 2300 2700
+F 0 "#PWR0158" H 2300 2700 30  0001 C CNN
+F 1 "GND" H 2300 2630 30  0001 C CNN
+	1    2300 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L USBDF U10013
+U 1 1 4ACE4835
+P 3000 2700
+F 0 "U10013" H 2900 2450 60  0000 C CNN
+F 1 "USBDF01W5" H 3000 2950 60  0000 C CNN
+	1    3000 2700
+	1    0    0    1   
+$EndComp
+Text GLabel 2550 1900 0    60   Output ~ 0
+USB_ID
+$Comp
+L R R10045
+U 1 1 4A7BE0B1
+P 2950 1550
+F 0 "R10045" V 3050 1500 50  0000 C CNN
+F 1 "10K/5%" V 2850 1500 50  0000 C CNN
+	1    2950 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L TM2301N Q11
+U 1 1 4A7BDFFD
+P 3450 1500
+F 0 "Q11" V 3650 1700 60  0000 C CNN
+F 1 "TM2301N" V 3650 1300 60  0000 C CNN
+	1    3450 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D5
+U 1 1 4A7BDF6A
+P 3900 1500
+F 0 "D5" H 3900 1600 40  0000 C CNN
+F 1 "MSCD104" H 4150 1550 40  0000 C CNN
+	1    3900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0159
+U 1 1 4A7BDE77
+P 4150 2800
+F 0 "#PWR0159" H 4150 2800 30  0001 C CNN
+F 1 "GND" H 4150 2730 30  0001 C CNN
+	1    4150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0160
+U 1 1 4A7BDDC0
+P 4500 2800
+F 0 "#PWR0160" H 4500 2800 30  0001 C CNN
+F 1 "GND" H 4500 2730 30  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10043
+U 1 1 4A7BDD77
+P 4500 2500
+F 0 "R10043" V 4600 2650 50  0000 C CNN
+F 1 "100K/5%" V 4400 2450 50  0000 C CNN
+	1    4500 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0161
+U 1 1 4A7BDCBC
+P 4800 2800
+F 0 "#PWR0161" H 4800 2800 30  0001 C CNN
+F 1 "GND" H 4800 2730 30  0001 C CNN
+	1    4800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4010071
+U 1 1 4A7BDCBB
+P 4800 2500
+F 0 "C4010071" V 4850 2350 50  0000 L CNN
+F 1 "0.01uF/16V" V 4600 2500 50  0000 L CNN
+	1    4800 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR BD10
+U 1 1 4A7BDB67
+P 4150 2350
+F 0 "BD10" V 4100 2350 40  0000 C CNN
+F 1 "PZ1608D221" V 4250 2350 40  0000 C CNN
+	1    4150 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L USB_MICRO_AB J4
+U 1 1 4A7BD8B4
+P 4800 1850
+F 0 "J4" H 4550 1750 60  0000 C CNN
+F 1 "USB_MICRO_AB" H 4950 2050 60  0000 C CNN
+	1    4800 1850
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
