@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Pzt 09 Mar 2015 12:31:25 EET
+
+BeginCmp
+TimeStamp = /54FD7256;
+Reference = C1;
+ValeurCmp = 22uF/6.3V;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD728A;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD7265;
+Reference = C3;
+ValeurCmp = 220nF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD7344;
+Reference = C4;
+ValeurCmp = 22uF/6.3V;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD733E;
+Reference = C5;
+ValeurCmp = 220nF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD73E1;
+Reference = C6;
+ValeurCmp = 1nF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD7410;
+Reference = C7;
+ValeurCmp = 1nF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD7416;
+Reference = C8;
+ValeurCmp = 1nF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD741C;
+Reference = C9;
+ValeurCmp = 1nF;
+IdModule  = SM0402_c;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FD70E1;
+Reference = U1;
+ValeurCmp = ALLWINNERA10/TFBGA441;
+IdModule  = TFBGA441-new;
+EndCmp
+
+EndListe
