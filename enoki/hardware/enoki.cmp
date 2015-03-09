@@ -1,10 +1,17 @@
-Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Pzt 09 Mar 2015 12:07:01 EET
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Pzt 09 Mar 2015 16:39:53 EET
 
 BeginCmp
-TimeStamp = /54FD6A8D;
+TimeStamp = /54FDA1D6/54FDAE8D;
 Reference = U1;
+ValeurCmp = RTL8211CL-GR;
+IdModule  = lqfp48;
+EndCmp
+
+BeginCmp
+TimeStamp = /54FDA1D6/54FDA219;
+Reference = U2;
 ValeurCmp = ALLWINNERA10/TFBGA441;
-IdModule  = TFBGA441;
+IdModule  = TFBGA441-new;
 EndCmp
 
 EndListe
