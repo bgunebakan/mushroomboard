@@ -1,0 +1,194 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:allwinner
+LIBS:RTL8211CL-GR
+LIBS:enoki-cache
+EELAYER 24 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ALLWINNERA10/TFBGA441 U1
+U 3 1 54FC94BD
+P 3950 4750
+F 0 "U1" H 3950 4750 60  0000 C CNN
+F 1 "ALLWINNERA10/TFBGA441" H 3950 4600 60  0000 C CNN
+F 2 "" H 3950 4750 60  0000 C CNN
+F 3 "" H 3950 4750 60  0000 C CNN
+	3    3950 4750
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	10500 900  10500 6500
+Wire Bus Line
+	6350 5650 6350 4100
+Wire Bus Line
+	6350 4100 10500 4100
+Entry Wire Line
+	6250 4200 6350 4300
+Entry Wire Line
+	6250 4300 6350 4400
+Entry Wire Line
+	6250 4400 6350 4500
+Entry Wire Line
+	6250 4500 6350 4600
+Entry Wire Line
+	6250 4600 6350 4700
+Entry Wire Line
+	6250 4700 6350 4800
+Entry Wire Line
+	6250 4800 6350 4900
+Entry Wire Line
+	6250 4900 6350 5000
+Entry Wire Line
+	6250 5000 6350 5100
+Entry Wire Line
+	6250 5100 6350 5200
+Entry Wire Line
+	6250 5200 6350 5300
+Entry Wire Line
+	6250 5300 6350 5400
+Entry Wire Line
+	6250 5400 6350 5500
+Entry Wire Line
+	6250 5500 6350 5600
+Entry Wire Line
+	6250 5600 6350 5700
+Wire Bus Line
+	6350 5700 6350 5600
+Wire Bus Line
+	1550 6000 1550 900 
+Wire Bus Line
+	1150 900  10500 900 
+Entry Wire Line
+	1550 2400 1650 2500
+Entry Wire Line
+	1550 2500 1650 2600
+Entry Wire Line
+	1550 2600 1650 2700
+Entry Wire Line
+	1550 2800 1650 2900
+Entry Wire Line
+	1550 2900 1650 3000
+Entry Wire Line
+	1550 3000 1650 3100
+Entry Wire Line
+	1550 3100 1650 3200
+Entry Wire Line
+	1550 3300 1650 3400
+Entry Wire Line
+	1550 3200 1650 3300
+Entry Wire Line
+	1550 3400 1650 3500
+Entry Wire Line
+	1550 3500 1650 3600
+Entry Wire Line
+	1550 3600 1650 3700
+Entry Wire Line
+	1550 3700 1650 3800
+Entry Wire Line
+	1550 3800 1650 3900
+Entry Wire Line
+	1550 3900 1650 4000
+Entry Wire Line
+	1550 4000 1650 4100
+Entry Wire Line
+	1550 4100 1650 4200
+Entry Wire Line
+	1550 4200 1650 4300
+Entry Wire Line
+	1550 4300 1650 4400
+Entry Wire Line
+	1550 4400 1650 4500
+Entry Wire Line
+	1550 4500 1650 4600
+Entry Wire Line
+	1550 4600 1650 4700
+Entry Wire Line
+	1550 4700 1650 4800
+Entry Wire Line
+	1550 4800 1650 4900
+Entry Wire Line
+	1550 4900 1650 5000
+Entry Wire Line
+	1550 5000 1650 5100
+Entry Wire Line
+	1550 5100 1650 5200
+Entry Wire Line
+	1550 5200 1650 5300
+Entry Wire Line
+	1550 5300 1650 5400
+Entry Wire Line
+	1550 5400 1650 5500
+Entry Wire Line
+	1550 5500 1650 5600
+Entry Wire Line
+	1550 5600 1650 5700
+Entry Wire Line
+	1550 5700 1650 5800
+Entry Wire Line
+	1550 5800 1650 5900
+Entry Wire Line
+	1550 5900 1650 6000
+$Comp
+L H5TQ4G63MFR U2
+U 1 1 54FF604E
+P 13900 3750
+F 0 "U2" H 13900 3750 60  0000 C CNN
+F 1 "H5TQ4G63MFR" H 13900 3750 60  0000 C CNN
+F 2 "" H 13900 3750 60  0000 C CNN
+F 3 "" H 13900 3750 60  0000 C CNN
+	1    13900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L H5TQ4G63MFR U3
+U 1 1 54FF6062
+P 22250 3800
+F 0 "U3" H 22250 3800 60  0000 C CNN
+F 1 "H5TQ4G63MFR" H 22250 3800 60  0000 C CNN
+F 2 "" H 22250 3800 60  0000 C CNN
+F 3 "" H 22250 3800 60  0000 C CNN
+	1    22250 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

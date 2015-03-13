@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3  Date: Tue 22 May 2012 14:44:56 BST
+#encoding utf-8
+#
+# ELECTRO2
+#
+DEF ELECTRO2 C 0 40 Y Y 1 F N
+F0 "C" 150 -150 40 H V C CNN
+F1 "ELECTRO2" 200 50 29 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 0  -100 0  100 0 N
+P 2 0 1 0  0 -200  0 -100 N
+P 2 0 1 0  0 100  0 0 N
+P 5 0 1 0  -100 -50  100 -50  100 -100  -100 -100  -100 -50 F
+X ~ 1 0 100 100 D 50 50 1 1 I N
+X ~ 2 0 -200 100 U 50 50 1 1 I N
+ENDDRAW
+ENDDEF
+#
+#End Library
+

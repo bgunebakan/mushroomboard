@@ -32,13 +32,13 @@ LIBS:valves
 LIBS:allwinner
 LIBS:RTL8211CL-GR
 LIBS:enoki-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A2 23386 16535
 encoding utf-8
-Sheet 1 2
+Sheet 1 6
 Title ""
-Date "9 mar 2015"
+Date ""
 Rev ""
 Comp ""
 Comment1 ""
@@ -47,9 +47,33 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1600 1650 1150 900 
-U 54FDA1D6
-F0 "Sheet54FDA1D5" 50
-F1 "ethernet.sch" 50
+S 2550 1700 1500 1350
+U 54FC9062
+F0 "hdmi" 50
+F1 "hdmisch.sch" 50
+$EndSheet
+$Sheet
+S 2600 4150 1450 1400
+U 54FC946A
+F0 "LCD" 50
+F1 "lcd.sch" 50
+$EndSheet
+$Sheet
+S 2600 6650 1850 1900
+U 54FC94AE
+F0 "Sheet54FC94AD" 50
+F1 "file54FC94AD.sch" 50
+$EndSheet
+$Sheet
+S 2600 9650 3000 2700
+U 54FC94B1
+F0 "Sheet54FC94B0" 50
+F1 "file54FC94B0.sch" 50
+$EndSheet
+$Sheet
+S 7850 1650 1650 1450
+U 54FC94B4
+F0 "powers" 50
+F1 "powers.sch" 50
 $EndSheet
 $EndSCHEMATC

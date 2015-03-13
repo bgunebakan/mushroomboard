@@ -1,0 +1,84 @@
+/* MACHINE-GENERATED ! */
+
+frame pad {
+	set name = i
+
+	ur: vec @(a/2, 0mm)
+	ll: vec .(-a, b)
+	pad "$name" ur .
+}
+
+frame pads_b {
+	set a = w
+
+	set b = l
+
+	loop i = 1, 4
+
+	__0: vec @(-1.5*p+p*(i-1), -B1/2)
+	frame pad .
+}
+
+frame pads_u {
+	set a = w
+
+	set b = -l
+
+	loop i = 5, 8
+
+	__0: vec @(1.5*p-p*(i-5), B1/2)
+	frame pad .
+}
+
+frame pads {
+	frame pads_b @
+	frame pads_u @
+}
+
+frame gnd {
+	__0: vec @(-D1/2, E2/2)
+	__1: vec .(D1, -E2)
+	pad "GND" . __0
+}
+
+frame outline {
+	ur: vec @(A/2, B/2)
+	ll: vec @(-A/2, -B/2)
+	rect ur . silk
+	c: vec @(-1.5*p, -B1/2+l+0.2mm+2*silk)
+	d: vec .(0mm, 1.5*silk)
+	circ c . silk
+}
+
+package "SOP8"
+unit mm
+
+set p = 1.27mm
+
+set w = 0.4mm
+
+set l = 1mm
+
+set B1 = 6mm
+
+set A = 4.9mm
+
+set B = 3.9mm
+
+set silk = 0.1mm
+
+set E2 = 2.413mm
+
+set D1 = 3.4mm
+
+frame pads @
+frame outline @
+frame gnd @
+measy pads_b.__0 -> pads_u.__0 1mm
+measy pads_u.__0 <- pad.ll -w-0.5mm
+measx pads_b.__0 -> pads_b.__0 -0.5mm
+measx pad.ll -> pad.ur l
+measy pad.ll -> pad.ll 0.5mm
+measx pads_u.__0 -> pads_u.__0 0.5mm
+measy gnd.__1 >> gnd.__0 -0.5mm
+measx gnd.__0 >> gnd.__1 0.5mm

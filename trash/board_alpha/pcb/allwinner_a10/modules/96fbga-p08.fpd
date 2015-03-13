@@ -1,0 +1,68 @@
+/* MACHINE-GENERATED ! */
+
+frame ball {
+	__0: vec @((col-M/2-0.5)*e, (N/2-row+0.5)*e)
+	__1: vec .(-d/2, -d/2)
+	__2: vec __0(d/2, d/2)
+	rpad "$rname$col" __1 .
+}
+
+frame cout_side {
+	table
+	    { rname, row }
+	    { "A", 1 }
+	    { "B", 2 }
+	    { "C", 3 }
+	    { "D", 4 }
+	    { "E", 5 }
+	    { "F", 6 }
+	    { "G", 7 }
+	    { "H", 8 }
+	    { "J", 9 }
+	    { "K", 10 }
+	    { "L", 11 }
+	    { "M", 12 }
+	    { "N", 13 }
+	    { "P", 14 }
+	    { "R", 15 }
+	    { "T", 16 }
+
+	table
+	    { col }
+	    { 1 }
+	    { 2 }
+	    { 3 }
+	    { 7 }
+	    { 8 }
+	    { 9 }
+
+	frame ball @
+}
+
+frame outline {
+	__0: vec @(-Ox/2, -Oy/2)
+	__1: vec @(Ox/2, Oy/2)
+	rect __0 . 
+}
+
+package "96FBGA-P0.8"
+unit mm
+
+set e = 0.8mm
+
+set N = 16
+set M = 9
+
+set d = 0.2mm
+
+set Ox = 9mm
+
+set Oy = 13mm
+
+frame cout_side @
+frame outline @
+measy outline.__0 >> outline.__1 0.5mm
+measx outline.__0 >> outline.__1 Oy+0.5mm
+measy ball.__0 >> ball.__0 1.3mm
+measx ball.__0 >> ball.__0 Oy
+measx ball.__0 -> ball.__0 -1.3mm

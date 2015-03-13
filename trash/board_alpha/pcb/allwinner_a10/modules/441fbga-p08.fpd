@@ -1,0 +1,107 @@
+/* MACHINE-GENERATED ! */
+
+frame ball {
+	__0: vec @((col-N/2-0.5)*e, (N/2-row+0.5)*e)
+	__1: vec .(-d/2, -d/2)
+	__2: vec __0(d/2, d/2)
+	rpad "$rname$col" __1 .
+}
+
+frame cmid_full {
+	table
+	    { rname, row }
+	    { "H", 8 }
+	    { "J", 9 }
+	    { "K", 10 }
+	    { "L", 11 }
+	    { "M", 12 }
+	    { "N", 13 }
+	    { "P", 14 }
+	    { "R", 15 }
+	    { "T", 16 }
+
+	loop col = 8, 16
+
+	frame ball @
+}
+
+frame cout_side {
+	table
+	    { rname, row }
+	    { "F", 6 }
+	    { "G", 7 }
+	    { "H", 8 }
+	    { "J", 9 }
+	    { "K", 10 }
+	    { "L", 11 }
+	    { "M", 12 }
+	    { "N", 13 }
+	    { "P", 14 }
+	    { "R", 15 }
+	    { "T", 16 }
+	    { "U", 17 }
+	    { "V", 18 }
+
+	table
+	    { col }
+	    { 1 }
+	    { 2 }
+	    { 3 }
+	    { 4 }
+	    { 5 }
+	    { 19 }
+	    { 20 }
+	    { 21 }
+	    { 22 }
+	    { 23 }
+
+	frame ball @
+}
+
+frame cout_full {
+	table
+	    { rname, row }
+	    { "A", 1 }
+	    { "B", 2 }
+	    { "C", 3 }
+	    { "D", 4 }
+	    { "E", 5 }
+	    { "W", 19 }
+	    { "Y", 20 }
+	    { "AA", 21 }
+	    { "AB", 22 }
+	    { "AC", 23 }
+
+	loop col = 1, 23
+
+	frame ball @
+}
+
+frame outline {
+	__0: vec @(-Ox/2, -Oy/2)
+	__1: vec @(Ox/2, Oy/2)
+	rect __0 . 
+}
+
+package "441TFBGA-P0.8"
+unit mm
+
+set e = 0.8mm
+
+set N = 23
+
+set d = 0.2mm
+
+set Ox = 19mm
+
+set Oy = 19mm
+
+frame cout_full @
+frame cout_side @
+frame cmid_full @
+frame outline @
+measy outline.__0 >> outline.__1 1.56mm
+measx outline.__0 >> outline.__1 Oy+1.56mm
+measy ball.__0 >> ball.__0 1.56mm
+measx ball.__0 >> ball.__0 Oy
+measx ball.__0 -> ball.__0 -1.56mm
