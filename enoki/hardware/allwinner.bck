@@ -1,7 +1,3 @@
-EESchema-DOCLIB  Version 2.0  Date: Sun 01 Jan 2012 21:03:10 GMT
-#
-$CMP ALLWINNERA10/FBGA441
-D GPLv3+ Implementation of Allwinner A10 Cortex A8 CPU
-$ENDCMP
+EESchema-DOCLIB  Version 2.0
 #
 #End Doc Library
